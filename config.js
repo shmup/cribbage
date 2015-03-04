@@ -1,9 +1,38 @@
 System.config({
-  "baseURL": "/",
   "paths": {
     "*": "*.js",
     "github:*": "jspm_packages/github/*.js",
     "npm:*": "jspm_packages/npm/*.js"
+  }
+});
+
+System.config({
+  "depCache": {
+    "npm:process@0.10.0": [
+      "npm:process@0.10.0/browser"
+    ],
+    "github:jspm/nodelibs-process@0.1.1/index": [
+      "npm:process@0.10.0"
+    ],
+    "github:jspm/nodelibs-process@0.1.1": [
+      "github:jspm/nodelibs-process@0.1.1/index"
+    ],
+    "npm:lodash@3.3.1/index": [
+      "github:jspm/nodelibs-process@0.1.1"
+    ],
+    "npm:lodash@3.3.1": [
+      "npm:lodash@3.3.1/index"
+    ],
+    "lib/deck": [
+      "npm:lodash@3.3.1",
+      "lib/card"
+    ],
+    "lib/cribbage": [
+      "lib/deck"
+    ],
+    "lib/main": [
+      "lib/cribbage"
+    ]
   }
 });
 
@@ -43,14 +72,11 @@ System.config({
     "github:jspm/nodelibs-process@0.1.1": {
       "process": "npm:process@0.10.0"
     },
-    "github:jspm/nodelibs-querystring@0.1.0": {
-      "querystring": "npm:querystring@0.2.0"
-    },
     "github:jspm/nodelibs-stream@0.1.0": {
       "stream-browserify": "npm:stream-browserify@1.0.0"
     },
     "github:jspm/nodelibs-url@0.1.0": {
-      "url": "npm:url@0.10.2"
+      "url": "npm:url@0.10.3"
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
@@ -149,10 +175,10 @@ System.config({
     "npm:string_decoder@0.10.31": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
-    "npm:url@0.10.2": {
+    "npm:url@0.10.3": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
       "punycode": "npm:punycode@1.3.2",
-      "querystring": "github:jspm/nodelibs-querystring@0.1.0",
+      "querystring": "npm:querystring@0.2.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:util@0.10.3": {
