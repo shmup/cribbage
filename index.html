@@ -13,9 +13,9 @@
         <div class="mui-container">
             <button data-bind="click: newHand" class="mui-btn mui-btn-primary">Button</button>
             <div class="mui-panel" id="hand">
-                <ul data-bind="foreach: hand">
-                    <li data-bind="text: name"></li>
-                </ul>
+                <!-- ko foreach: hand -->
+                <card params='suit: suit, name: name'></card>
+                <!-- /ko -->
             </div>
         </div>
 
