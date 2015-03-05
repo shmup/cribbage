@@ -28,10 +28,23 @@ System.config({
       "lib/card"
     ],
     "lib/cribbage": [
+      "npm:lodash@3.3.1",
       "lib/deck"
     ],
     "lib/main": [
       "lib/cribbage"
+    ],
+    "npm:mithril@0.1.30": [
+      "npm:mithril@0.1.30/mithril"
+    ],
+    "github:components/jquery@2.1.3": [
+      "github:components/jquery@2.1.3/jquery"
+    ],
+    "lib/app": [
+      "lib/cribbage",
+      "npm:mithril@0.1.30",
+      "npm:lodash@3.3.1",
+      "github:components/jquery@2.1.3"
     ]
   }
 });
@@ -41,6 +54,7 @@ System.config({
     "bootstrap": "github:twbs/bootstrap@3.3.2",
     "font-awesome": "npm:font-awesome@4.3.0",
     "jquery": "github:components/jquery@2.1.3",
+    "knockout": "npm:knockout@3.3.0",
     "lodash": "npm:lodash@3.3.1",
     "mithril": "npm:mithril@0.1.30",
     "mui": "npm:mui@1.0.0",
@@ -136,6 +150,9 @@ System.config({
     },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "npm:knockout@3.3.0": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:lodash@3.3.1": {
       "process": "github:jspm/nodelibs-process@0.1.1"
