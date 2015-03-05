@@ -7,12 +7,15 @@
         <script src="//cdn.muicss.com/mui-0.0.3/js/mui.min.js"></script>
         <link href="//cdn.muicss.com/mui-0.0.3/css/mui.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" type="text/css" href="jspm_packages/npm/font-awesome@4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="jspm_packages/npm/font-awesome@4.3.0/css/font-awesome.min.css">
     </head>
     <body>
         <div class="mui-container">
-            <div class="mui-panel" id="app">
-            </div>
-            <div class="mui-panel" id="log">
+            <button data-bind="click: newHand" class="mui-btn mui-btn-primary">Button</button>
+            <div class="mui-panel" id="hand">
+                <ul data-bind="foreach: hand">
+                    <li data-bind="text: name"></li>
+                </ul>
             </div>
         </div>
 
