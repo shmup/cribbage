@@ -4,19 +4,22 @@
         <title>cribbage</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="jspm_packages/github/twbs/bootstrap@3.3.2/css/bootstrap.min.css">
+        <script src="//cdn.muicss.com/mui-0.0.3/js/mui.min.js"></script>
+        <link href="//cdn.muicss.com/mui-0.0.3/css/mui.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" type="text/css" href="jspm_packages/npm/font-awesome@4.3.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
     <body>
-        <div class="container-fluid">
-            <div id="fifteens"></div>
+        <div class="mui-container">
+            <div class="mui-panel" id="app">
+            </div>
+            <div class="mui-panel" id="log">
+            </div>
+        </div>
 
         <script src="jspm_packages/system.js"></script>
         <script src="config.js"></script>
         <script>
-            System.import('lib/main')
+            System.import('lib/app')
         </script>
-        </div>
     </body>
 </html>

@@ -8,11 +8,11 @@ System.config({
 
 System.config({
   "depCache": {
-    "npm:process@0.10.0": [
-      "npm:process@0.10.0/browser"
+    "npm:process@0.10.1": [
+      "npm:process@0.10.1/browser"
     ],
     "github:jspm/nodelibs-process@0.1.1/index": [
-      "npm:process@0.10.0"
+      "npm:process@0.10.1"
     ],
     "github:jspm/nodelibs-process@0.1.1": [
       "github:jspm/nodelibs-process@0.1.1/index"
@@ -42,6 +42,8 @@ System.config({
     "font-awesome": "npm:font-awesome@4.3.0",
     "jquery": "github:components/jquery@2.1.3",
     "lodash": "npm:lodash@3.3.1",
+    "mithril": "npm:mithril@0.1.30",
+    "mui": "npm:mui@1.0.0",
     "ramda": "npm:ramda@0.10.0",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -70,7 +72,7 @@ System.config({
       "path-browserify": "npm:path-browserify@0.0.0"
     },
     "github:jspm/nodelibs-process@0.1.1": {
-      "process": "npm:process@0.10.0"
+      "process": "npm:process@0.10.1"
     },
     "github:jspm/nodelibs-stream@0.1.0": {
       "stream-browserify": "npm:stream-browserify@1.0.0"
